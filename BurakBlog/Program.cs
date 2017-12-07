@@ -11,6 +11,7 @@ namespace BurakBlog
     {
         public static void Main(string[] args)
         {
+            var b = new WebHostBuilder();
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
